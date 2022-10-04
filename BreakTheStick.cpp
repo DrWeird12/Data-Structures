@@ -4,13 +4,13 @@ void solution()
 {
     int n, x;
     cin >> n >> x;
-    if (n % 2 == 0)
+    if (!n & 1)
     {
         cout << "YES" << endl;
     }
     else
     {
-        if (x % 2)
+        if (x & 1)
         {
             cout << "YES" << endl;
         }
