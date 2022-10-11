@@ -9,12 +9,7 @@ void solution(){
     if(temp[0]==temp[1] && temp[1]==temp[2]){ 
 	    cout<<"YES"<<endl; 
     }
-    else if(temp[0]==temp[1] && temp[2]>temp[1]){ 
-	    cout<<"YES"<<endl; 
-    }
-    else{ 
-	    cout<<"NO"<<endl; 
-    }
+     cout<<(temp[0]==temp[1] && temp[2]>temp[1]) ?  "YES" : "NO" <<endl;
 }
 
 int main() {
