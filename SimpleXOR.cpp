@@ -6,16 +6,16 @@ class solution
 public:
     void sol()
     {
-        int lt, rt;
-        cin >> lt >> rt;
+        int l, r;
+        cin >> l >> r;
 
         set<int> st;
         bool ft = false;
-        for (int i = lt; i <= rt; i++)
+        for (int i = l; i <= r; i++)
         {
-            for (int j = i + 1; j <= rt; j++)
+            for (int j = i + 1; j <= r; j++)
             {
-                for (int k = j + 1; k <= rt; k++)
+                for (int k = j + 1; k <= r; k++)
                 {
                     int temp = (i ^ j ^ k);
                     if (temp >= lt and temp <= rt)
