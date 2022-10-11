@@ -9,7 +9,7 @@ void sol(){
 	       counter=0;
 	       temp=2;
 	   }
-	   else if(x==0 || y==0){
+	   else if(x==0||y==0){
 	        counter=-1;
 	        x=0;y=0;
 	        temp=1;
@@ -20,12 +20,12 @@ void sol(){
 	         x=y;
 	         y=temp;
         }
-	    counter=y;
-	    while(x!=0 && y!=0 && x*2<=y){
-	       x*=2;
-	       counter++;
+	    //counter=y;
+	    //while(x!=0 && y!=0 && x*2<=y){
+	      // x*=2;
+	       //counter++;
 	    }
-	    if(x<y)
+	    //if(x<y)
 	    counter++;
 	 }
     cout<<counter<<endl;
