@@ -1,42 +1,34 @@
-#include<iostream>
 #include <bits/stdc++.h>
 using namespace std;
 
+bool isPossible(vector<int> &stalls, int k,int dist,int n){
 
-bool solve(vector<int> &stalls, int k,int dist,int n){
-	
-	int cnt=1;
-	int firstCow=stalls[0];
+	int cnt=1, firstCow=stalls[0];
 	for(int i=1;i<n;i++){
 		if(stalls[i]-firstCow >=dist){
 			cnt++;
 			firstCow=stalls[i];
 		}
-		if(cnt==k) return true;
+		if(cnt==k){return true;}
 	}
-	
 	return false;
 }
 
-int aggressiveCows(vector<int> &stalls, int k)
-{
-    int n=stalls.size();
-	//sorting the array
+int aggressiveCows(vector<int> &stalls, int k){
+	int n=stalls.size();
 	sort(stalls.begin(),stalls.end());
-	int s=1;
-	
-	int e=-1;
+	int s=1, e=-1;
 	for(int i=0;i<n;i++)  e=max(e,stalls[i]);
 	int maxDis=0;
 	while(s<=e){
 		int mid=s+(e-s)/2;
-		
-		if(solve(stalls,k,mid,n)){
+		if(isPossible(stalls,k,mid,n)){
 			maxDis=mid;
 			s=mid+1;
 		}
-		else
+		else{
 			e=mid-1;
+		}
 	}
-	return maxDis;
+return maxDis;
 }
