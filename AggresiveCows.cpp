@@ -3,7 +3,7 @@
 using namespace std;
 
 
-bool isPossible(vector<int> &stalls, int k,int dist,int n){
+bool solve(vector<int> &stalls, int k,int dist,int n){
 	
 	int cnt=1;
 	int firstCow=stalls[0];
@@ -31,7 +31,7 @@ int aggressiveCows(vector<int> &stalls, int k)
 	while(s<=e){
 		int mid=s+(e-s)/2;
 		
-		if(isPossible(stalls,k,mid,n)){
+		if(solve(stalls,k,mid,n)){
 			maxDis=mid;
 			s=mid+1;
 		}
