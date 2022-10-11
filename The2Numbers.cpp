@@ -1,15 +1,12 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-class solution
-{
+class solution{
 public:
-    void sol()
-    {
+    void sol(){
         long long n;
         cin >> n;
-        if (n == 2)
-        {
+        if (n == 2){
             cout << 0 << endl;
         }
         else if (n % 2)
