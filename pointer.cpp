@@ -8,9 +8,9 @@ int i=6;
 int *pr=&i;
 cout<<*pr<<endl;
 
-(*pr)++;
-cout<<*pr<<endl;
-cout<<i<<endl;
+//(*pr)++;
+//cout<<*pr<<endl;
+//cout<<i<<endl;
 // // cout<<*pr<<endl;
 // // cout<<pr<<endl;
 // // pr+=1;//it will increament the 4 bytes in case of the int data type and not by 1
