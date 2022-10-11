@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void solution()
-{
+void solution(){
     int k, x;
     cin >> k >> x;
     // calculiating the waiting time
@@ -10,13 +9,11 @@ void solution()
     cout << ans << endl;
 }
 
-int main()
-{
+int main(){
     int test;
     cin >> test;
 
-    while (test--)
-    {
+    while (test--){
         solution();
     }
     return 0;
