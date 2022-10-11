@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
 void sol(){
-    long long x, y;
+    long long x, y, temp;
     cin >> x >> y;
-    long long temp = (x - 1) * (2 * y - x);
+    temp = (x - 1) * (2 * y - x);
 
     cout << temp << endl;
 }
