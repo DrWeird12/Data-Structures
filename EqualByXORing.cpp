@@ -6,7 +6,7 @@ bool isPowerOfTwo(int n){
    return (ceil(log2(n)) == floor(log2(n)));
 }
 
-int countBits(int number){   
+int countnoBits(int number){   
     return (int)log2(number)+1;
 }
 
@@ -17,11 +17,13 @@ void solve(){
     if(a == b){ cout << 0 << endl; return; }
     else if(x<n){ cout<<1<<endl; return; }
 	else if(x>=n){
-	    int nbit_x = countBits(x);
+	    int nbit_x = countnoBits(x);
 	    int N=n;
-	    int nbit_n = countBits(N);
+	    int nbit_n = countnoBits(N);
 	    if(nbit_n==nbit_x){
-	        if(isPowerOfTwo(n)){ cout<<-1<<endl; return; }
+	        if(isPowerOfTwo(n)){ 
+			cout<<-1<<endl; return; 
+		}
 	        else{ cout<<2<<endl; return; }
 	    }
 	    else{ cout<<-1<<endl; }
