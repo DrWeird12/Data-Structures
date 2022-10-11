@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
+#include<iosteran.h>
 using namespace std;
-
 string solution(){
     int x;
     cin>>x;

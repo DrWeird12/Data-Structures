@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-void solution()
-{
+void solution(){
     int x, y;
     //taking input of the numbers
     cin >> x >> y;

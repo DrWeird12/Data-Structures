@@ -2,7 +2,7 @@
 using namespace std;
 
 bool isPossible(vector<int> &stalls, int k,int dist,int n){
-	
+
 	int cnt=1, firstCow=stalls[0];
 	for(int i=1;i<n;i++){
 		if(stalls[i]-firstCow >=dist){
