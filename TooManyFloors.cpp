@@ -10,10 +10,9 @@ void solution(){
 }
 
 int main(){
-    int test;
-    cin>>test;
-    
-    while(test--){
+    int t;
+    cin>>t;
+    while(t--){
         solution();
     }
     return 0;
