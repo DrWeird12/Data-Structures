@@ -11,20 +11,20 @@ public:
         }
         else if (n % 2)
         {
-            long long int t = (n / 2) * (n / 2 + 1) - 1;
-            cout << t << endl;
+            long long int total = (n / 2) * (n / 2 + 1) - 1;
+            cout << total << endl;
         }
         else
         {
             if (n / 2 % 2)
             {
-                long long int t = (n / 2 - 2) * (n / 2 + 2) - 1;
-                cout << t << endl;
+                long long int sum = (n / 2 - 2) * (n / 2 + 2) - 1;
+                cout << sum << endl;
             }
             else
             {
-                long long int t = (n / 2 - 1) * (n / 2 + 1) - 1;
-                cout << t << endl;
+                long long int ans = (n / 2 - 1) * (n / 2 + 1) - 1;
+                cout << ans << endl;
             }
         }
     }
